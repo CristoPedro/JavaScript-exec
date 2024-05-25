@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de DOM</title>
+    <style>
+        body {
+            background-color: rgb(81, 88, 190);
+            font: normal 1em arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usa o <strong>DOM</strong> em JavaScript</p>
+    <p>Clique em mim</p>
+     <p>Vamos mudar o fundo da página para preto você concorda</p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[3]
+        var bo = window.document.body
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        p1.style.color = 'blue'
+       bo.style.background = 'black'
+ 
+        window.alert(p1.innerText)
+       
+    </script>
+</body>
+</html>

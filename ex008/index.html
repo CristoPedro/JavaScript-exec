@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estrutura condicional</title>
+    <style>
+        body {
+            background-color: rgb(176, 176, 176);
+           font-family: Arial, Helvetica, sans-serif;
+        }
+         
+        input#txtvel {
+            padding: 5px;
+           width: 100px;
+           border-radius: 5px;
+            background-color: antiquewhite;
+         
+        }
+       input#bo {
+            background-color: rgb(51, 94, 135);
+            padding: 10px;
+            color: wheat;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+
+    Velocidade do corro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" id="bo"  onclick="calcular()">
+    <div id="res">Resultado</div>
+     <script>
+        function calcular() {
+            var tn = window.document.getElementById('txtvel')
+            var res = window.document.getElementById('res')
+            var vel = Number(tn.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h </strong></p>`
+            if(vel > 60){
+               res.innerHTML += ` <p>Você foi <strong>Multado</strong> Por ultrapassar a velocidade normal</p>`
+            }else{
+                res.innerHTML = `<p>  Você esta dirigindo muito <strong>bem</strong> </p>`
+            }
+
+            res.innerHTML += `Dirija sempre usando um cinto de segurança para a sua proteção`
+            
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4b60e8;
+
+}
+
+.container {
+
+    background-color: rgb(255, 255, 255);
+    max-width: 600px;
+    min-width: 280px;
+    padding-top: 20px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.511);
+}
+
+       #res {
+           display: flex;
+            border-top:5px solid rgb(37, 47, 73);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+            padding: 14px;
+            background-color: rgb(0, 0, 0);
+            margin: auto;
+            color: aliceblue;
+            max-width: 800px;
+            min-width: 280px;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+p{
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+}
+
+
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.445);
+    color: white;
+}
+
+.div-inp {
+    padding: 10px;
+}
+
+.sexo {
+    padding: 10px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.butt {
+    padding: 10px;
+}
+
+#subres {
+    position: absolute;
+    top:30%;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+   
+
+}
+
+
+    </style>
+</head>
+<body>
+  <header>
+      <h1>Verficador de idade</h1> 
+  </header>
+  <section class="container">
+      <div class="div-inp">
+        Ano de Nascimento:
+        <input type="number" name="txt" id="txt1">
+    </div>
+    <div class="sexo">
+        Sexo <input type="radio" name="radsex" id="Masc"> Masculino 
+        <input type="radio" name="radsex" id="Fem"> Femenino
+    </div>
+    <div class="butt">
+        <input type="button" value="Verificar" onclick="verificar()">
+    </div>
+    <div id="res">
+        Preencha os dados acima para ver o resultado!
+        <div id="subres">
+            <img src="" alt="">
+        </div>
+    </div>
+    
+  </section>  
+  <footer class="conteudo">
+    &copy; <em>Pedro Cristo</em>
+  </footer>
+  
+  <script src="script1.js"></script>
+</body>
+</html>

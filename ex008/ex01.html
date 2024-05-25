@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício proposto</title>
+</head>
+<body>
+    <h1>Verficando o país</h1>
+   Meu País: <input type="text" id="txtpa">
+    <input type="button" value="Ver" onclick="testar()">
+    <div id="naci">Nacionalidade</div>
+
+    <script>
+        function testar() {
+            var txt = window.document.getElementById('txtpa')
+            var naci = window.document.getElementById('naci')
+
+            var país = (txt.value)
+             naci.innerHTML = `Vivendo em ${país}`
+            if (país != 'Angola') {
+                naci.innerHTML += '<p>Você é <strong>Estangeiro</strong></p>'
+            }else{
+                naci.innerHTML += '<p>Você é<strong> Angolano</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>
