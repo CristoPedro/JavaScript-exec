@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>site html</title>
+    <style>
+        .principal {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.742);
+
+            background-image: url('img/fundo11.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+
+            background-color: rgba(0, 0, 0, 0.536);
+            background-blend-mode: color;
+
+        }
+    </style>
+</head>
+<body>
+
+    <header id="cabeca" >
+        <button id="abrir">&#9776</button>
+     <img src="img/logo-aguia.png" id="logo" alt="">
+        <nav id="menu">
+            <button id="feichar">X</button>
+            <a href="#">Estudos</a>
+            <a href="#">Novas</a>
+            <a href="#">Cursos</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+     <section class="principal">
+        <div class="content">
+            <div class="pesquisa">
+                <input type="text" name="pesquisa" placeholder="pesquisa..">
+                <img src="img/search.png" class="pes" alt="">
+            </div>
+        </div>
+    
+         <article id="content-principal">
+            
+             <h2> Conhecimento é poder e uma arma</h2> 
+             <p>estudantes do Águia branca curso de informática da 11ª classe sala 10 disciplina TI periodo manhã</p>
+             <a href="#" class="link">EXPLORE</a> 
+         </article>  
+
+     </section>
+     <main id="container">
+
+        <section class="secao1">
+             
+        </section >
+
+        <section class="secao2">
+           
+        </section >
+     </main>    
+     <footer >
+        <p>&copy;copyrht <a href="#" class="autor">Pedro Cristo</a></p>
+     </footer>
+
+     <script>
+        abrir.addEventListener('click', () => {
+            menu.style.display = 'flex'
+            
+            menu.style.right = (menu.offsetWidth * -1) + 'px'
+
+            abrir.style.display = 'none'
+            
+            setTimeout(() => {
+                menu.style.opacity = '1'
+
+              menu.style.right = '0'
+        
+            }, 10)
+        })
+
+        feichar.addEventListener('click', () => {
+              menu.style.opacity = '0'
+ 
+            menu.style.right = (menu.offsetWidth * -1) + 'px'
+         
+        setTimeout(() => {
+         menu.removeAttribute('style')
+             abrir.removeAttribute('style')
+        }, 200)
+
+         })
+     </script>
+</body>
+</html>

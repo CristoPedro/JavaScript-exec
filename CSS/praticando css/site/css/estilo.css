@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+header#cabeca {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: flex-end;
+    height: 100px;
+    background-color: black;
+}
+
+nav#menu > a{
+   text-decoration: none;
+   color: white;
+   margin: 10px;
+   font-size: 1.2em;
+   padding: 5px;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#content-principal {
+    text-align: center;
+      
+ }
+
+ #content-principal h2{
+     font-size: 2rem;
+ }
+
+ #content-principal p {
+     font-size: 1.2rem;
+     padding: 7px 0; 
+ }
+
+ .link{
+     text-decoration: none;
+     display: inline-block;
+     color: #fff;
+     background-color: rgba(233, 232, 230, 0.185);
+     padding: 15px 60px;
+     border-radius: 10px;
+     transition: 500ms ease;
+ }
+
+ .link:hover {
+     cursor: pointer;
+     background: #00000037;
+ }
+
+ #container {
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     background-color: #ffffff55;
+ }
+
+ .content {
+    display: none;
+ }
+ .pesquisa {
+    display: flex;
+    background-color: #efefef;
+    width: 400px;
+    border-radius: 20px;
+    padding: 0 15px;
+ 
+}
+
+.pesquisa img {
+    width: 10px;
+}
+
+.pesquisa input {
+    width: 100%;
+    background: transparent;
+    padding: 15px;
+    outline: none;
+    border: 0;
+}
+
+ #logo {
+     width: 250px;
+     padding: 10px;
+     position: absolute;
+     left: 10px;
+     top: 10px;
+ }
+
+ .secao1 {
+     margin-top: 50px;
+     height: 300px;
+     background-color: rgb(31, 31, 31);
+
+ }
+
+ footer {
+     display: flex;
+     height: 100px;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+ }
+ 
+ .autor {
+     text-decoration: none;
+     display: inline-block;
+     color: #4f4d4d;
+     padding: 20px;
+ }
+
+ #abrir, #feichar {
+     cursor: pointer;
+     display: none;
+     margin: 10px;
+     font-weight: bold;
+     border: none;
+     color: #6d6c71;
+     background: none;
+     font-size: 25px;
+ }
+ 
+
+
+
+
+ @media only screen and (max-width:923px) {
+    #menu {
+        position: fixed;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        width: 50vh;
+        display: none;
+        margin-top: 30px;
+        border-radius: 20px;
+        background-color: #00000053;
+        opacity: 0;
+    }
+
+    #menu > a:hover {
+        color: #000000;
+        transition-duration: .5s;
+    }
+
+    #feichar {
+        position: fixed;
+        right: 10px;
+        top: 35px;
+        display: block;
+    }
+  
+
+     #abrir {
+         display: block;
+     }
+ }
+
+ @media only screen and (max-width:780px) {
+      #content-principal {
+        display: none;
+      }
+
+      .content {
+        display: block;
+      }
+ }
+
+ @media only screen and (max-width: 450px) {
+    .pesquisa {
+        width: 320px;
+        padding: 2px;
+    }
+
+
+ }
+
+ @media only screen and (max-width: 360px) {
+    .pesquisa {
+        width: 300px;
+        padding: 2px;
+    }
+ }
+
+ @media only screen and (max-width: 320px) {
+    .pesquisa {
+        width: 250px;
+        padding: 2px;
+    }
+
+    #logo {
+        width: 200px;
+    }
+ }

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color:red;
+    height: 600px;
+
+}  
+
+.container div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container .box-1 {
+        flex-basis: 33%;
+}
+
+.container .box-2 {
+     flex-basis: 33%;
+}
+
+.container .box-3 {
+    flex-basis: 33%;
+}
