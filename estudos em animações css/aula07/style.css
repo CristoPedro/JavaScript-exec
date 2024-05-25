@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span.carregando {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    border-radius: 50%;
+    border: 12px solid rgb(110, 220, 20);
+    border-left: 12px solid transparent;
+    animation: load 1s ease-in-out infinite;
+
+}
+
+@keyframes load {
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
